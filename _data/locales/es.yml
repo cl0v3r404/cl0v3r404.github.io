@@ -1,0 +1,91 @@
+# The layout text of site
+
+# ----- Commons label -----
+
+layout:
+  post: Publicación
+  category: Categoría
+  tag: Etiqueta
+
+# The tabs of sidebar
+tabs:
+  home: Inicio
+  categories: Categorías
+  tags: Etiquetas
+  archives: Archivo
+  about: Sobre
+
+# the text displayed in the search bar & search results
+search:
+  hint: buscar
+  cancel: Cancelar
+  no_results: ¡Vaya! No se han encontrado resultados.
+
+panel:
+  lastmod: Actualizado recientemente
+  trending_tags: Etiquetas populares
+  toc: Contenido
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: Esta publicación está licenciada bajo :LICENSE_NAME por el autor.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: Algunos derechos reservados.
+  verbose: >-
+    Salvo indicación en contrario, las entradas de blog de este sitio están
+    licenciadas bajo la Licencia Creative Commons Attribution 4.0 International
+    (CC BY 4.0) por el autor.
+
+meta: Usando el tema :THEME para :PLATFORM.
+
+not_found:
+  statement: Lo sentimos, no hemos encontrado esa URL o apunta a algo que no existe.
+
+notification:
+  update_found: Hay una nueva versión de contenido disponible.
+
+# ----- Posts related labels -----
+
+post:
+  written_by: Por
+  posted: Publicado
+  updated: Actualizado
+  words: palabras
+  pageview_measure: vistas
+  read_time:
+    unit: min
+    prompt: leer
+  edit: Editar esta publicación
+  relate_posts: Lectura adicional
+  share: Compartir
+  button:
+    next: Más reciente
+    previous: Anterior
+    copy_code:
+      succeed: ¡Copiado!
+    share_link:
+      title: Copiar enlace
+      succeed: ¡Enlace copiado con éxito!
+
+# Date time format.
+# See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
+df:
+  post:
+    strftime: "%b %e, %Y"
+    dayjs: "ll"
+  archives:
+    strftime: "%b"
+    dayjs: "MMM"
+
+# categories page
+categories:
+  category_measure:
+    singular: categoría
+    plural: categorías
+  post_measure:
+    singular: publicación
+    plural: publicaciones
