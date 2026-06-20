@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_templates/plantilla.md",
+                "file": "_tabs/about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "plantilla"
+              "title": "about"
             }
           }
         ]
@@ -178,12 +178,16 @@
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
-      "templater-obsidian:Templater": false
+      "bases:Crear nueva base": false
     }
   },
   "active": "d22d3f0c820c63d5",
   "lastOpenFiles": [
+    "_tabs/tags.md",
+    "_tabs/categories.md",
+    "_tabs/archives.md",
+    "_tabs/about.md",
+    "_templates/plantilla.md",
     "_posts/2026-05-09-Prueba-de-post.md",
     "_site/posts/Prueba-de-post/index.html",
     "_site/posts/Prueba-de-post",
@@ -195,7 +199,6 @@
     "_site/tags/etiqueta3/index.html",
     "_site/tags/etiqueta3",
     "_site/tags/etiqueta2/index.html",
-    "_templates/plantilla.md",
     "_po23t23/2026-05-09-.md",
     "_po46t46/2026-05-09-.md"
   ]
