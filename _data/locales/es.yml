@@ -47,6 +47,7 @@ not_found:
 
 notification:
   update_found: Hay una nueva versión de contenido disponible.
+  update: Actualizar
 
 # ----- Posts related labels -----
 
