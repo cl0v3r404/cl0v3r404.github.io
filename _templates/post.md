@@ -1,12 +1,13 @@
 ---
 title: Título del Post
-date: YYYY-MM-DD HH:MM:SS +0000
+date: YYYY-MM-DD HH:MM:SS +0200  # verano
+date: YYYY-MM-DD HH:MM:SS +0100  # invierno
 categories: [Categoría Principal, Subcategoría]
 tags: [etiqueta1, etiqueta2, etiqueta3]
 description: Una breve descripción del contenido del post para SEO y vista previa.
 image:
   path: /ruta/a/imagen.jpg
-  lqip: data:image/webp;base64,UklGRiYAAABXRUJQ... # opcional, para carga progresiva
+ # lqip: data:image/webp;base64,UklGRiYAAABXRUJQ... # opcional, para carga progresiva
   alt: Descripción alternativa de la imagen
 ---
 
