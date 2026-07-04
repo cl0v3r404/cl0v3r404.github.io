@@ -1,6 +1,7 @@
 ---
 title: 1 año con Proxmox ¿Por qué lo abandoné?
 date: 2026-07-04 19:03:SS +0200  # verano
+last_modified_at: 2026-07-04 22:27:00 +0200 # verano
 categories: [HomeLab]
 tags: [migracion, proxmox, openmediavault]
 author: cl0v3r
@@ -33,7 +34,7 @@ Estuve probando en entorno virtual varias soluciones, [OpenMediaVault](https://w
 
 Cuando instalé OMV en el Proliant, noté como se aprovechaba el hardware al máximo, Docker me daba esa libertad de desplegar aplicaciones, además de haber descubierto un ecosistema de aplicaciones *selfhosted* bastante amplia y muy rica, ahí fue cuando descubrí Nextcloud, Immich, Jellyfin, aplicaciones que sigo usando día a día. También aprendí a usar un reverse proxy, como *Nginx Proxy Manager* y también descubrí DuckDNS como dominio, en sustitución del que usaba que era NoIP, que se me hacía un rollo el tener que estar cada mes confirmando que quería renovar (de forma gratuita) mi dominio. Aprendí mucho de administración de sistemas y Docker, de hecho Docker fue un vicio absoluto, desplegar soluciones con tan solo unas líneas y tenerlas aisladas sin romper el sistema host fue lo mejor que pude descubrir.
 
-En este punto, ya había actualizado la memoria RAM, primeramente con módulos RAM de escritorio, sin ECC ya que no era capaz de encontrar un módulo que funcionase, hasta que al final acabé encontrandolo. La configuración de RAM que tiene actualmente es de 8GB de RAM ECC DDR3.
+En este punto, ya había actualizado la memoria RAM, primeramente con módulos RAM de escritorio, sin ECC ya que no era capaz de encontrar un módulo que funcionase, hasta que al final acabé encontrándolo. La configuración de RAM que tiene actualmente es de 8GB de RAM ECC DDR3.
 
 ## La transición al nuevo hardware
 
@@ -42,14 +43,14 @@ Empecé a sentir al Proliant algo corto en recursos, Jellyfin se colgaba cuando 
 ![Orochi](../assets/img/posts/2026-07-04-un-anio-con-proxmox/Orochi.jpg)
 _Orochi actualmente_
 
-En este hardware empecé a unar Proxmox, configuré una máquina virtual para usarla como NAS, empecé con TrueNAS, ya que estuve usandolo en el Proliant antes de montar este hardware y no quería perder los datos. En ese momento solamente tenía 4 discos, 2 de 2TB y 2 de 500GB (todos de escritorio) por lo que usaba una controladora SATA PCIe de 6 puertos, que más tarde cambié por una controladora LSI 2008 para poder tener las 8 bahías de la caja disponibles. En un inicio estaba montado en una torre ATX estandar, decidí cambiar el hardware a una caja de NAS para tenerlo en una estantería más recogido y fuera de peligro. La caja tiene 8 bahías para discos, de ahí el nombre que le puse, Orochi, por la serpiente de 8 cabezas de 8 cabezas de la mitología japonesa, *Yamata no Orochi*
+En este hardware empecé a usar Proxmox, configuré una máquina virtual para usarla como NAS, empecé con TrueNAS, ya que estuve usándolo en el Proliant antes de montar este hardware y no quería perder los datos. En ese momento solamente tenía 4 discos, 2 de 2TB y 2 de 500GB (todos de escritorio) por lo que usaba una controladora SATA PCIe de 6 puertos, que más tarde cambié por una controladora LSI 2008 para poder tener las 8 bahías de la caja disponibles. En un inicio estaba montado en una torre ATX estándar, decidí cambiar el hardware a una caja de NAS para tenerlo en una estantería más recogido y fuera de peligro. La caja tiene 8 bahías para discos, de ahí el nombre que le puse, Orochi, por la serpiente de 8 cabezas de 8 cabezas de la mitología japonesa, *Yamata no Orochi*
 
 Y desde entonces llevo usando Proxmox, OMV como NAS para ahorrar recursos y dedicarlos a otras aplicaciones, y muchos LXCs que os mostraré en otro post donde os haga un recorrido por mi Proxmox.
 
 ## El punto de inflexión, ¿Proxmox es demasiado para mi infraestructura actual?
 
-Esta es la pregunta a la que, despues de haberte dado la chapa con mi viaje por el mundo del homelab, esperabas que respondiese, ¿es demasiado para la infraestructura que tengo? La respuesta es corta, si. No estoy aprovechando características clave que tiene Proxmox como *high availability*, o la migración en vivo porque no tengo hardware redundante para aprovecharlas. Además de estar teniendo ciertos problemas con el NAS y esa capa de virtualización, siento que estoy perdiendo rendimiento, de la LSI y de todo el hardware en general. Con la infraestructura que tengo actualmente, con usar OMV o TrueNAS sería mas que suficiente, se aprovecha mejor el hardware, no tengo la latencia, a pesar de tener *passthrough* en la LSI, siento esa latencia, por no hablar de como está estructurado actualmente, que para compartir carpetas para Nextcloud, Immich y Jellyfin, por mencionar algunas, pierdo velocidad y tengo cuello de botella. Por lo que, abandono Proxmox y voy a dedicar el hardware a lo que inicialmente estuvo pensado, ser un NAS.
+Esta es la pregunta a la que, después de haberte dado la chapa con mi viaje por el mundo del homelab, esperabas que respondiese, ¿es demasiado para la infraestructura que tengo? La respuesta es corta, si. No estoy aprovechando características clave que tiene Proxmox como *high availability*, o la migración en vivo porque no tengo hardware redundante para aprovecharlas. Además de estar teniendo ciertos problemas con el NAS y esa capa de virtualización, siento que estoy perdiendo rendimiento, de la LSI y de todo el hardware en general. Con la infraestructura que tengo actualmente, con usar OMV o TrueNAS sería mas que suficiente, se aprovecha mejor el hardware, no tengo la latencia, a pesar de tener *passthrough* en la LSI, siento esa latencia, por no hablar de como está estructurado actualmente, que para compartir carpetas para Nextcloud, Immich y Jellyfin, por mencionar algunas, pierdo velocidad y tengo cuello de botella. Por lo que, abandono Proxmox y voy a dedicar el hardware a lo que inicialmente estuvo pensado, ser un NAS.
 
 Haré un post dedicado al proceso de migración de Proxmox a OMV, por lo que recomiendo estar al tanto.
 
-Si has llegado hasta el final, darte las gracias por tomarte el tiempo en la lectura de este post y tambien agradecerte por haber descubierto mi blog, y si te gusta, compártelo. Este es mi primer post, se agradecen comentarios para mejorar.
+Si has llegado hasta el final, darte las gracias por tomarte el tiempo en la lectura de este post y también agradecerte por haber descubierto mi blog, y si te gusta, compártelo. Este es mi primer post, se agradecen comentarios para mejorar.

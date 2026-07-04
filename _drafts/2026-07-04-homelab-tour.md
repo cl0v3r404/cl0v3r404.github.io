@@ -18,6 +18,14 @@ Tal y como prometí, voy a hacer un tour por mi actual HomeLab, en el momento de
 
 Aunque hablé un poco del hardware en el [post anterior]({% post_url 2026-07-04-un-anio-con-proxmox %}), pero aquí voy a hacerlo de forma más extensa. 
 
+Empezamos hablando de la base de todo equipo informático, la placa base o *motherboard*, es una [Machinist H81M-PRO-S1](https://theretroweb.com/motherboards/s/machinist-h81m-pro-s1), placa base que, como comenté en el [anterior post]({% post_url 2026-07-04-un-anio-con-proxmox %}), las placas base de la época eran algo caras para ser de segunda mano y esta tiene cosas, que en su época no tenían, como una ranura NVMe (aunque en la web que he enlazado, dice que es M.2 SATA, en mi caso no funcionó, solo funciona con NVMe, y no he visto en la BIOS opción para configurarlo como M.2 SATA), que si bien no va a ser como las de equipos modernos, está bien para quien tenga un equipo de la época y quiera usar un almacenamiento de estos, además de que con adaptadores se puede expandir como un PCIe normal.
+
+El cerebro, Intel Core i5-4590, un procesador, que para el propósito, rinde estupendamente, y no flaquea en nada. Rinde bien tanto como un ordenador de escritorio como servidor. Muy bien Intel.
+
+RAM, 16GB de RAM DDR3 en 2 módulos de 8GB cada uno de la marca Kingston HyperX.
+
+GPU, Intel Arc A310, este elemento fue pensado para las transcodificaciones de Jellyfin, que a día de hoy no solo para Jellyfin, también se usa en Nextcloud e Immich
+
 
 ### Subsección
 
