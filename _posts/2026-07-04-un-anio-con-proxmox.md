@@ -18,7 +18,7 @@ Para llegar al punto en el que estoy actualmente tengo que hacer un pequeño rec
 
 ## HP Proliant N40L, el inicio de todo
 
-Empecé como ya he mencionado con el HP Proliant N40L, máquina que a día de hoy sigo teniendo, pero arrinconada y sin uso. Empecé usándola como NAS, que fue el propósito de comprarla, montar mi primer NAS. Aunque mas que montar el NAS, quería comprar un NAS, pero cuando vi los precios de estos, me lo plantee. Y donde yo trabajaba en aquella época, que era una tienda de informática de barrio, montamos varios NAS para algunos clientes con el DSM de Synology. 
+Empecé como ya he mencionado con el HP Proliant N40L, máquina que a día de hoy sigo teniendo, pero arrinconada y sin uso. Empecé usándola como NAS, que fue el propósito de comprarla, montar mi primer NAS. Aunque mas que montar el NAS, quería comprar un NAS, pero cuando vi los precios de estos, me lo plantee. Y donde yo trabajaba en aquella época, que era una tienda de informática de barrio, montamos varios NAS para algunos clientes con el DSM de Synology.
 
 Iba decidido a adquirir un Synology, pero los precios eran algo elevados y al descubrir que se podía instalar DSM en cualquier hardware, fui buscando un equipo para montarlo, ahí fue cuando me topé con el Proliant N40L, iba buscando realmente el Gen 8, que era el que teníamos allí en el taller, pero por el precio que creo recordar que fueron unos 90€ con 4GB de RAM ECC, no me lo pensé y lo compré, además venía con 3 discos de 500GB y yo tenía uno de 500GB que usé para completar las 4 bahías.
 
