@@ -2,6 +2,8 @@
 title: Título del Post
 date: YYYY-MM-DD HH:MM:SS +0200  # verano
 date: YYYY-MM-DD HH:MM:SS +0100  # invierno
+last_modified_at: 2026-07-04 10:00:00 +0200 # verano
+last_modified_at: 2026-07-04 10:00:00 +0100 # invierno
 categories: [Categoría Principal, Subcategoría]
 tags: [etiqueta1, etiqueta2, etiqueta3]
 description: Una breve descripción del contenido del post para SEO y vista previa.
