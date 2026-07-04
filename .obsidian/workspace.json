@@ -6,6 +6,7 @@
       {
         "id": "46dead26a9551e71",
         "type": "tabs",
+        "dimension": 48.60406091370558,
         "children": [
           {
             "id": "d22d3f0c820c63d5",
@@ -26,6 +27,7 @@
       {
         "id": "38c7002cf6259a11",
         "type": "tabs",
+        "dimension": 51.39593908629442,
         "children": [
           {
             "id": "11a04eac54f430e5",
@@ -201,10 +203,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "d22d3f0c820c63d5",
+  "active": "11a04eac54f430e5",
   "lastOpenFiles": [
-    "_drafts/2026-07-04-homelab-tour.md",
+    "assets/img/posts/homelab-tour/discos-sistema.png",
+    "assets/img/posts/homelab-tour/lsi.png",
     "_posts/2026-07-04-un-anio-con-proxmox.md",
+    "_drafts/2026-07-04-homelab-tour.md",
+    "assets/img/posts/homelab-tour/discos-almacenamiento.png",
+    "assets/img/posts/homelab-tour",
     "_tabs/about.md",
     "_tabs/tags.md",
     "_tabs/categories.md",
@@ -220,7 +226,6 @@
     "_site/categories/categoría-principal",
     "_site/tags/etiqueta3/index.html",
     "_site/tags/etiqueta3",
-    "_site/tags/etiqueta2/index.html",
     "_po23t23/2026-05-09-.md",
     "_po46t46/2026-05-09-.md"
   ]

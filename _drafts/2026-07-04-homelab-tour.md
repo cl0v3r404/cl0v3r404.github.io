@@ -24,9 +24,24 @@ El cerebro, Intel Core i5-4590, un procesador, que para el propósito, rinde est
 
 RAM, 16GB de RAM DDR3 en 2 módulos de 8GB cada uno de la marca Kingston HyperX.
 
-GPU, Intel Arc A310, este elemento fue pensado para las transcodificaciones de Jellyfin, que a día de hoy no solo para Jellyfin, también se usa en Nextcloud e Immich
+GPU, Intel Arc A310, este elemento fue pensado para las transcodificaciones de Jellyfin, que a día de hoy no solo para Jellyfin, también se usa en Nextcloud e Immich. Esto creo que es lo mejor de mi HomeLab, es una GPU que rinde tan bien, que me han dado ganas de adquirir otra para usarla única y exclusivamente en mi PC para realizar grabaciones con ella, para los clips de los juegos y manejar el escritorio con ella y quitarle carga a la GPU principal. Si alguien está pensando en montar una GPU dedicada para un HomeLab o para tareas de grabación y transcodificación y no quieres gastar en una GPU de Nvidia, la Intel Arc A310, es una opción muy a tener en cuenta, de verdad, la recomiendo.
 
+Como controladora de almacenamiento estoy utilizando actualmente una LSI 2008, de la marca Dell (no recuerdo el modelo exacto), en un inicio la compré para tener un hardware dedicado de RAID en mi PC, pero después de decidir centralizar todo el almacenamiento en Orochi, decidí pasarla a este, pasándola de modo *IR (Integrated RAID)* a *modo IT (Initiator Targered)*, para que funcione como una controladora de almacenamiento normal, sin funciones de RAID. 
+Pasar de una controladora SATA PCIe que el chip no era lo mejor, a esta controladora, la estabilidad del servidor se ha notado bastante, antes no podía hacer un balanceo BTRFS porque se congelaba Proxmox completamente.
 
+![LSI](../assets/img/posts/homelab-tour/lsi.png)
+_Controladora LSI que tengo instalada_
+
+Almacenamiento. Este apartado lo voy a separar en dos apartados, almacenamiento del sistema y almacenamiento de datos. 
+El almacenamiento del sistema tengo 3 discos, un SSD Samsung 870 EVO de 250GB donde está instalado Proxmox, un HDD Toshiba de 1TB (reciclado de una PS4) donde almaceno principalmente las copias que hago con Proxmox Backup Service (del que hablaremos un poco más adelante), almacenar ISOs, plantillas y algunas copias varias, así me ahorro espacio en el SSD que, como veréis, está un poco al límite ya. Y como ultimo un Intel Optane de 16GB. Este fue comprado en un principio para instalar en el TrueNAS, ya que este al ser un sistema inmutable y que ocupa tan poco, en un SSD de 16GB era perfecto, y así poder usar un SSD para las apps de Docker. Actualmente, lo ando usando como Swap de Proxmox, que es mas o menos para lo que se diseñaron estas unidades, una caché entre almacenamiento lento y procesador. Hablamos de cuando los SSD eran caros (más o menos como los precios que tienen actualmente con la crisis de la IA). 
+
+![discos-sistema](../assets/img/posts/homelab-tour/discos-sistema.png)
+_SSD Samsung, HDD Toshiba y Optane_
+
+En almacenamiento de datos tengo una configuración, que si bien soy consciente de que no es la mejor, es la que actualmente puedo permitirme. Actualmente la configuración de discos es de 6 unidades HDD, 4 de 2TB Seagate Barracuda y 2 de 500GB uno Western Digital Blue y Seagate Barracuda. Como veis, todos son de escritorio, repito, es la configuración que me he podido permitir, se que para esto los discos de NAS son los más adecuados, pero es lo que la economía de un estudiante puede dar.
+
+![discos-almacenamiento](../assets/img/posts/homelab-tour/discos-almacenamiento.png)
+_Configuración de almacenamiento actual_
 ### Subsección
 
 Detalles adicionales aquí.
