@@ -1,9 +1,13 @@
 ---
 title: 1 año con Proxmox ¿Por qué lo abandoné?
-date: 2026-07-04 19:03:SS +0200  # verano
-last_modified_at: 2026-07-04 22:27:00 +0200 # verano
-categories: [HomeLab]
-tags: [migracion, proxmox, openmediavault]
+date: 2026-07-04 19:03:00 +0200
+last_modified_at: 2026-07-04 22:27:00 +0200
+categories:
+  - HomeLab
+tags:
+  - migracion
+  - proxmox
+  - openmediavault
 author: cl0v3r
 description: 1 año usando Proxmox en mi HomeLab, aquí explico el por qué decidí abandonarlo y que estoy usando en sustitución a este.
 image:
