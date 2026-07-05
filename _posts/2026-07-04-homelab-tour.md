@@ -1,6 +1,7 @@
 ---
 title: HomeLab tour
 date: 2026-07-05 19:28:00 +0200
+last_modified_at: 2026-07-04 21:35:00 +0200
 categories:
   - HomeLab
 tags:
@@ -102,7 +103,7 @@ Si bien OMV no es capaz desde la WebUI gestionar de forma sencilla la agregació
 
 ##### Configuraciones útiles
 
-Gracias a la flexibilidad que da OMV, al basarse en un Debian, se pueden aprovechar todas sus características, por lo que una de las funciones que aprovecho es la creación de scripts y levantarlos vía servicio SystemD. Y si, has adivinado, tengo un script justo así. Se trata de un Script que se encarga vía SSH de conectarse al host de Proxmox, para realizar el montaje de compartidos NFS sobre este y a su vez, cuando los recursos NFS están listos, inicia los LXC que correspondan a los montajes NFS. Este script me salva de tener que montar de forma manual los NFS cada vez que reinicio Proxmox u OMV. Para que este script se ejecute, hay dos maneras de hacerlo, o bien por tarea cron o por servicio SystemD, y la opción de servicio de SystemD es la más eficiente, ya que podemos definir algún requisito para que se ejecute, como en este caso para NFS lo importante es tener red, dejamos que el servicio espere hasta que la red esté lista y ahí es cuando se activa. Lo dejaré en mi GitHub el script y la creación del servicio SystemD por si a alguien le interesa.
+Gracias a la flexibilidad que da OMV, al basarse en un Debian, se pueden aprovechar todas sus características, por lo que una de las funciones que aprovecho es la creación de scripts y levantarlos vía servicio SystemD. Y si, has adivinado, tengo un script justo así. Se trata de un Script que se encarga vía SSH de conectarse al host de Proxmox, para realizar el montaje de compartidos NFS sobre este y a su vez, cuando los recursos NFS están listos, inicia los LXC que correspondan a los montajes NFS. Este script me salva de tener que montar de forma manual los NFS cada vez que reinicio Proxmox u OMV. Para que este script se ejecute, hay dos maneras de hacerlo, o bien por tarea cron o por servicio SystemD, y la opción de servicio de SystemD es la más eficiente, ya que podemos definir algún requisito para que se ejecute, como en este caso para NFS lo importante es tener red, dejamos que el servicio espere hasta que la red esté lista y ahí es cuando se activa. Lo dejaré en mi [GitHub](https://github.com/cl0v3r404/NFS-Mount-Script-Proxmox.git) el script y la creación del servicio SystemD por si a alguien le interesa.
 
 ###### Tareas programadas
 
