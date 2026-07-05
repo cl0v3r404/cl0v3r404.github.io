@@ -1,6 +1,6 @@
 ---
 title: HomeLab tour
-date: 2026-07-05 18:57:00 +0200
+date: 2026-07-05 19:28:00 +0200
 categories:
   - HomeLab
 tags:
