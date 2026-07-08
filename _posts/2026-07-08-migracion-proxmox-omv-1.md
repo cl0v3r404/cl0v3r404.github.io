@@ -1,6 +1,6 @@
 ---
 title: Así migré de Promox a OpenMediaVault
-date: YYYY-MM-DD HH:MM:SS +0200
+date: 2026-07-08 18:50:00 +0200
 categories:
   - HomeLab
 tags:
@@ -8,9 +8,6 @@ tags:
   - proxmox
   - docker
 description: Preparativos antes de un cambio de arquitectura
-image:
-  path: /ruta/a/imagen.jpg
-  alt: Descripción alternativa de la imagen
 ---
 Como todo cambio de arquitectura requiere un proceso de preparación, y en esta publicación mostraré que hice para preparar esa migración. Para que no sea muy extenso, lo dividiré en varias partes, así también separo la parte de la preparación, copias de seguridad, etc, de la parte de configuración. En este post trataré el tema de los preparativos, que he hecho para preparar el cambio y como proceder, así que sin más preámbulo empezamos.
 
@@ -118,6 +115,7 @@ Teniendo ya todo copiado y asegurándome de que todo los contenedores funcionen 
 
 En el siguiente post, lo retomaré desde la instalación de OMV, que usaré la ISO oficial por rapidez, abarcaremos algunas configuraciones básica que haré para dejar OMV listo para funcionar. 
 
-> [Advertencia]
-> Como último, decir que he utilizado Claude durante el proceso, para solucionar problemas que iban saliendo, buscar en la documentación oficial más rápidamente y revisar logs por si se me escapa algo. algunos comandos fueron proporcionados por Claude y fueron comprobados por mi parte, por lo que se pueden usar de forma segura.
 
+> Como último, decir que he utilizado Claude durante el proceso, para solucionar problemas que iban saliendo, buscar en la documentación oficial más rápidamente y revisar logs por si se me escapa algo. 
+> Algunos comandos fueron proporcionados por Claude y fueron comprobados por mi parte, por lo que se pueden usar de forma segura.
+{: .prompt-warning }
