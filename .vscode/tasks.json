@@ -4,23 +4,33 @@
     {
       "label": "Run Jekyll Server",
       "type": "shell",
-      "command": "./tools/run.sh",
+      "linux": {
+        "command": "podman run --rm -it --net=host --volume=\"${workspaceFolder}:/srv/jekyll:Z\" docker.io/library/ruby:3.3 bash -c \"cd /srv/jekyll && gem install bundler && bundle install && bundle exec jekyll serve --host 0.0.0.0 --port 4000\""
+      },
+      "windows": {
+        "command": "bundle exec jekyll serve"
+      },
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "problemMatcher": [],
-      "detail": "Runs the Jekyll server with live reload."
+      "detail": "Runs the Jekyll server based on your OS."
     },
     {
       "label": "Build Jekyll Site",
       "type": "shell",
-      "command": "./tools/test.sh",
+      "linux": {
+        "command": "podman run --rm -it --volume=\"${workspaceFolder}:/srv/jekyll:Z\" docker.io/library/ruby:3.3 bash -c \"cd /srv/jekyll && gem install bundler && bundle install && bundle exec jekyll build\""
+      },
+      "windows": {
+        "command": "bundle exec jekyll build"
+      },
       "group": {
         "kind": "build"
       },
       "problemMatcher": [],
-      "detail": "Build the Jekyll site for production."
+      "detail": "Build the Jekyll site for production based on your OS."
     }
   ]
 }
