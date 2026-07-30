@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-07-09-migracion-proxmox-omv-2.md",
+                "file": "_drafts/2026-07-30-cambio-de-planes-omv-a-truenas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-09-migracion-proxmox-omv-2"
+              "title": "2026-07-30-cambio-de-planes-omv-a-truenas"
             }
           }
         ]
@@ -182,14 +182,24 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "11a04eac54f430e5",
+  "active": "6b5d4bb2a9ea6b9d",
   "lastOpenFiles": [
-    "_site/posts/migracion-proxmox-omv-2/index.html",
-    "_site/posts/migracion-proxmox-omv-2",
-    "_site/tags/instalacion/index.html",
-    "_site/tags/instalacion",
-    "_posts/2026-07-08-migracion-proxmox-omv-1.md",
+    "_posts/2026-07-05-homelab-tour.md",
+    "_drafts/2026-07-30-cambio-de-planes-omv-a-truenas.md",
+    "_site/tags/truenas/index.html",
+    "_site/tags/truenas",
     "_posts/2026-07-09-migracion-proxmox-omv-2.md",
+    "assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas",
+    "_site/posts/cambio-de-planes-omv-a-truenas/index.html",
+    "_site/posts/cambio-de-planes-omv-a-truenas",
+    "_site/categories/subcategoría/index.html",
+    "_site/categories/subcategoría",
+    "_site/categories/categoría-principal/index.html",
+    "_site/categories/categoría-principal",
+    "_site/tags/etiqueta3/index.html",
+    "_site/assets/img/posts/2026-07-04-un-anio-con-proxmox/Proliant.jpg",
+    "_posts/2026-07-08-migracion-proxmox-omv-1.md",
+    "_posts/post 1.md",
     "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2/portada.jpg",
     "assets/img/posts/2026-07-09-migracion-proxmox-omv-2/portada.jpg",
     "_drafts/esqueleto post 2.md",
@@ -200,17 +210,9 @@
     "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2/docker repo.png",
     "assets/img/posts/2026-07-09-migracion-proxmox-omv-2/docker repo.png",
     "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2/cambios pendientes expandido.png",
-    "assets/img/posts/2026-07-09-migracion-proxmox-omv-2/cambios pendientes expandido.png",
-    "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2",
-    "_posts/2026-07-05-homelab-tour.md",
     "_posts/2026-07-04-un-anio-con-proxmox.md",
-    "assets/img/posts/2026-07-09-migracion-proxmox-omv-2",
     "_templates/post-tutorial.md",
     "_templates/advertencias.md",
-    "_site/posts/migracion-proxmox-omv-1/index.html",
-    "_site/posts/migracion-proxmox-omv-1",
-    "_site/tags/omv/index.html",
-    "_site/tags/omv",
     "_templates/post.md",
     "_tabs/about.md",
     "_tabs/tags.md",
