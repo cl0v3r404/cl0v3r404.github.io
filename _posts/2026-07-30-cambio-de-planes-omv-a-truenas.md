@@ -9,7 +9,7 @@ tags:
   - NAS
 description: En mi reciente migración de Proxmox a OMV cambié de opinión y migré hacia TrueNAS
 image:
-  path: /ruta/a/imagen.jpg
+  path: assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas/portada.png
   alt: Descripción alternativa de la imagen
 ---
 En el [post anterior]({% post_url 2026-07-09-migracion-proxmox-omv-2 %}), prometí que os mostraría los servicios te tenía desplegados, en lo que preparaba ese post, me di cuenta de que OMV no se me terminaba de adaptar. No quiero que se me mal interprete, OMV es un sistema genial para montar un NAS casero, pero necesitaba algo más robusto, y más de mi experiencia anterior con OMV, de la que os voy a hablar porque considero importante comentarlo, tomé la decisión de migrar a TrueNAS. Barajé distintas opciones, Rockstor, un OpenSUSE Leap, pero TrueNAS fué la decisión tomada, los motivos, los describiré a continuación, sin olvidarme de la mala experiencia que tuve en OMV. 
@@ -30,8 +30,13 @@ El proceso de restauración pensaba que iba a ser más complejo, pero gracias a 
 ## Pequeños inconvenientes
 Como todo en la vida y en la informática, nada suele salir bien a la primera, y esto no iba a ser una excepción. Tenía mi Intel Arc A310 para transcodificaciones, pues con TrueNAS no puedo tener 2 GPUs activas a la vez o empieza a haber errores o directamente no funciona la transcodificación. Desactivar la iGPU hubiese sido una opción, pero al tener la Arc dentro con un raiser de minería y no tener las salidas de video por la parte trasera, dificultaba tener acceso a un monitor para entrar a la BIOS o ver que ocurre, así que por ahora, la Arc ya no está aquí, en su lugar, estoy usando la iGPU para las tareas de transcodificación, si bien, no puedo llegar a la calidad que con la Arc, me hace el apaño, además de convertir los archivos de video en formatos y codecs que reconozca la iGPU, para ello lo he automatizado con FilesFlow.   
 
+## Mi stack actual
+Para no extenderme mucho en este apartado, mencionaré que mi stack de apps no ha cambiado, sigo manteniendo las mismas que en OMV y Proxmox. Si algo funciona, ¿por que cambiarlo?
+
+![servicios](../assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas/servicios.png)
+
+Algunas de las apps que se pueden ver, las que no tienen un icono han sido desplegadas mediante un *yaml*, y aquí es donde reside esa flexibilidad de Docker sobre Kubernetes. Para quien no sepa, en un pasado, TrueNAS utilizaba Kubernetes, y el paso hacia Docker ha hecho que su consumo de recursos sea menor y mucho más flexible y accesible.
 ## TrueNAS, la roca que necesitaba
 He tardado un poco más en hacer este post, entre asuntos personales y probar la estabilidad. TrueNAS es lo que necesitaba, tener un NAS que funcione sin preocuparme de nada, desde el minuto 1, todo ha funcionado, exceptuando la Arc, que, espero que en un futuro solucionen esto y se puedan tener varias GPUs activas a la vez, pero por todo lo demás, funcionando perfecto, no he tenido que hacer configuraciones extras, modificar archivos, nada. Todo se configura desde la WebUI fácilmente y sin complicaciones. Si algo falla en la ultima update, retrocedo a la anterior con un clic, así de sencillo. 
 
 Voy a hacer recomendaciones, si buscas tener un NAS que sea prácticamente instalar y usar desde el minuto 1, sin tener que hacer configuraciones complejas, TrueNAS es perfecto, y diría que se puede llegar a acercar a lo que se busca en un NAS comercial, usarlo desde el minuto 1. Si te gusta trastear, modificar y no te importa estar pendiente del sistema de vez en cuando OMV es una buena opción. 
-

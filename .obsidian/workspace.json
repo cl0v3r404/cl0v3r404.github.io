@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2026-07-30-cambio-de-planes-omv-a-truenas.md",
+                "file": "_posts/2026-07-30-cambio-de-planes-omv-a-truenas.md",
                 "mode": "source",
                 "source": false
               },
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de archivos"
@@ -182,21 +184,25 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "6b5d4bb2a9ea6b9d",
+  "active": "11a04eac54f430e5",
   "lastOpenFiles": [
-    "_posts/2026-07-05-homelab-tour.md",
-    "_drafts/2026-07-30-cambio-de-planes-omv-a-truenas.md",
-    "_site/tags/truenas/index.html",
-    "_site/tags/truenas",
-    "_posts/2026-07-09-migracion-proxmox-omv-2.md",
-    "assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas",
     "_site/posts/cambio-de-planes-omv-a-truenas/index.html",
     "_site/posts/cambio-de-planes-omv-a-truenas",
+    "_site/assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas/portada.png",
+    "_site/assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas/servicios.png",
+    "_site/assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas",
+    "_site/tags/truenas/index.html",
+    "_site/tags/truenas",
+    "assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas/portada.png",
+    "assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas/servicios.png",
+    "_posts/2026-07-05-homelab-tour.md",
+    "_posts/2026-07-30-cambio-de-planes-omv-a-truenas.md",
+    "_posts/2026-07-09-migracion-proxmox-omv-2.md",
+    "assets/img/posts/2026-07-30-cambio-de-planes-omv-a-truenas",
     "_site/categories/subcategoría/index.html",
     "_site/categories/subcategoría",
     "_site/categories/categoría-principal/index.html",
     "_site/categories/categoría-principal",
-    "_site/tags/etiqueta3/index.html",
     "_site/assets/img/posts/2026-07-04-un-anio-con-proxmox/Proliant.jpg",
     "_posts/2026-07-08-migracion-proxmox-omv-1.md",
     "_posts/post 1.md",
@@ -206,10 +212,6 @@
     "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2/copia datos instalacion.png",
     "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2/nombre equipo.png",
     "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2/mis dns.png",
-    "assets/img/posts/2026-07-09-migracion-proxmox-omv-2/mis dns.png",
-    "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2/docker repo.png",
-    "assets/img/posts/2026-07-09-migracion-proxmox-omv-2/docker repo.png",
-    "_site/assets/img/posts/2026-07-09-migracion-proxmox-omv-2/cambios pendientes expandido.png",
     "_posts/2026-07-04-un-anio-con-proxmox.md",
     "_templates/post-tutorial.md",
     "_templates/advertencias.md",
