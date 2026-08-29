@@ -6,6 +6,7 @@ categories:
 tags:
   - instalacion
   - omv
+author: cl0v3r
 description: Así instalo OMV y lo configuro para mi uso
 image:
   path: assets/img/posts/2026-07-09-migracion-proxmox-omv-2/portada.jpg

@@ -1,7 +1,6 @@
 ---
 title: Cambio de planes, OMV por TrueNAS
 date: 2026-07-30 21:37:00 +0200
-last_modified_at: 2026-07-04 10:00:00 +0200
 categories:
   - HomeLab
 tags:

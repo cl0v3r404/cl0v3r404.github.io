@@ -10,6 +10,7 @@ tags:
   - docker
   - NAS
   - hardware
+author: cl0v3r
 description: Un breve paseo por mi HomeLab actual
 image:
   path: assets/img/posts/2026-07-05-homelab-tour/portada.png

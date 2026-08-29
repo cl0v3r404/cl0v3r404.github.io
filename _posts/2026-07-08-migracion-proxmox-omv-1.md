@@ -7,6 +7,7 @@ tags:
   - omv
   - proxmox
   - docker
+author: cl0v3r
 description: Preparativos antes de un cambio de arquitectura
 ---
 Como todo cambio de arquitectura requiere un proceso de preparación, y en esta publicación mostraré que hice para preparar esa migración. Para que no sea muy extenso, lo dividiré en varias partes, así también separo la parte de la preparación, copias de seguridad, etc, de la parte de configuración. En este post trataré el tema de los preparativos, que he hecho para preparar el cambio y como proceder, así que sin más preámbulo empezamos.
