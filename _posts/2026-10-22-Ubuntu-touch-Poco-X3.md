@@ -3,6 +3,7 @@ title: Ubuntu Touch en el Poco X3 NFC, ¿merece la pena?
 date: 2026-10-22 18:49:00 +0200  # verano
 categories: [Linux, Smartphones]
 tags: [ubuntu-touch, linuxphone]
+author: cl0v3r
 description: Instalé Ubuntu Touch en mi antiguo Poco X3 NFC, ¿será que Linux en móviles merecerá la pena?
 image:
   path: assets/img/posts/2026-10-22-Ubuntu-touch-Poco-X3/portada.jpg
